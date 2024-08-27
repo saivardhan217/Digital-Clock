@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="./clock.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-container">
+        <div class="label">Hours</div>
+        <div class="box" id="hours">00</div>
+      </div>
+      <div class="dot">:</div>
+      <!-- Dot separator -->
+      <div class="box-container">
+        <div class="label">Minutes</div>
+        <div class="box" id="minutes">00</div>
+      </div>
+      <div class="dot">:</div>
+      <!-- Dot separator -->
+      <div class="box-container">
+        <div class="label">Seconds</div>
+        <div class="box" id="seconds">00</div>
+      </div>
+      <div class="dot">:</div>
+      <!-- Dot separator -->
+      <div class="box-container">
+        <div class="label">MS</div>
+        <div class="box" id="milliseconds">000</div>
+      </div>
+    </div>
+
+    <div id="stoppedTime"></div>
+
+    <div class="buttons">
+      <button id="stopButton">Stop</button>
+      <button id="clearButton">Clear</button>
+    </div>
+  </body>
+</html>
+<script src="./clock.js"></script>
